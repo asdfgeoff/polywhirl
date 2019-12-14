@@ -9,7 +9,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name='polywhirl',
-    version='0.1.1',
+    version='0.1.0',
     python_requires='>=3.6.0',
     description='Run pandas-profiling HTML reports for a given list of database tables.',
     long_description=README,
