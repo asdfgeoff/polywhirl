@@ -1,0 +1,20 @@
+# database → schema → table
+
+name: redshift
+projects:
+  - name: maindb
+    schemas:
+      - name: transactional
+        tables:
+          - name: purchases
+            sortkey: purchase_ts
+          - name: customers
+            sortkey: first_purchase_ts
+          - name: searches
+            sortkey: search_ts
+      - name: behavioural
+        tables:
+          - name: frontend_events
+            sortkey: event_ts
+          - name: marketing_attribution
+            sortkey: acquisition_ts
